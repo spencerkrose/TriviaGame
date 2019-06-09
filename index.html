@@ -19,131 +19,150 @@
     </script>
 
     <body>
-        <div class="bg"></div>
-        <div class=container></div>
-        <div class="centered">
-            <h1>Welcome to Professional Wrestling Trivia!</h1>
-            <h3>Now hop in the ring and answer some annoyingly specific questions.</h3>
+        <div class="container">
 
-            <h2>Who is the Current WWE Champion?</h2>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Brock Lesnar
-                </label>
+            <div class="row" id="box-search">
+                <div class="thumbnail text-center">
+                    <img src="./images/WWE_Heavyweight.png" alt="The title belt" class="img-responsive">
+                    <div class="caption">
+                        <h1 style=color:white>Pro Wrestling Trivia!</h1>
+                    </div>
+                </div>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" id=correct for="exampleRadios1">
-                    Kofi Kingston
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Daniel Bryan
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Hulk Hogan
-                </label>
-            </div>
-            <h2>What does PWG stand for?</h2>
-            <div class="form-check">
-                <input class="form-check-input" id = correct type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Pro Wrestling Guerilla
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Power Wisdom Greatness
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Profesional Wrestlers Group
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Plants Won't Grow
-                </label>
-            </div>
-        <h2>Who are the three original members of the New World Order?</h2>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                checked>
-            <label class="form-check-label" for="exampleRadios1">
-               Fergal Devitt, Bad Luck Fale, and Karl Anderson
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                checked>
-            <label class="form-check-label" for="exampleRadios1">
-                Adam Cole, Kyle O'Reilly, and Bobby Fish
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                checked>
-            <label class="form-check-label" for="exampleRadios1">
-                HHH, Batista, and Randy Orton
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                checked>
-            <label class="form-check-label" for="exampleRadios1">
-                Hulk Hogan, Scott Hall, and Kevin Nash
-            </label>
-        </div>
-        <h2>What show did Kenny Omega win the IWGP Heavyweight Title at?</h2>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                checked>
-            <label class="form-check-label" for="exampleRadios1">
-               WWF Summerslam 1989
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                checked>
-            <label class="form-check-label" for="exampleRadios1">
-                WWF King of the Ring 1998
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                checked>
-            <label class="form-check-label" for="exampleRadios1">
-                ROH Final Battle 2004
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                checked>
-            <label class="form-check-label" for="exampleRadios1">
-                NJPW Dominion 2018
-            </label>
-        </div>
-        </div>
+            <!-- Question 1 -->
+            <div class="card border-0 shadow my-5">
+                <div class="card-body p-5">
+                    <h1> Who is the current WWE Champion?</h1>
+                    <!-- Option 1 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q1A1" name="groupOfDefaultRadios1">
+                        <label class="custom-control-label" for="Q1A1">Brock Lesnar</label>
+                    </div>
 
+                    <!-- option 2 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q1A2" id=correct name="groupOfDefaultRadios1">
+                        <label class="custom-control-label" for="Q1A2">Kofi Kingston</label>
+                    </div>
 
+                    <!--option 3 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q1A3" name="groupOfDefaultRadios1">
+                        <label class="custom-control-label" for="Q1A3">The Rock</label>
+                    </div>
+
+                    <div style="height: auto"></div>
+
+                </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="card border-0 shadow my-5">
+                <div class="card-body p-5">
+                    <h1> Which tag team is known as "The Good Brothers"?</h1>
+                    <!-- Option 1 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q2A1" id=correct name="groupOfDefaultRadios2">
+                        <label class="custom-control-label" for="Q2A1">Karl Anderson & Luke Gallows</label>
+                    </div>
+
+                    <!-- option 2 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q2A2" name="groupOfDefaultRadios2">
+                        <label class="custom-control-label" for="Q2A2">Daniel Bryan & Rowan</label>
+                    </div>
+
+                    <!--option 3 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q2A3" name="groupOfDefaultRadios2">
+                        <label class="custom-control-label" for="Q2A3">Erik & Ivar</label>
+                    </div>
+
+                    <div style="height: auto"></div>
+
+                </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="card border-0 shadow my-5">
+                <div class="card-body p-5">
+                    <h1> What is the top championship title in New Japan Pro Wrestling?</h1>
+                    <!-- Option 1 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q3A1" name="groupOfDefaultRadios3">
+                        <label class="custom-control-label" for="Q3A1">WWE Universal Championship</label>
+                    </div>
+
+                    <!-- option 2 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q3A2" id=correct name="groupOfDefaultRadios3">
+                        <label class="custom-control-label" for="Q3A2">IWGP Championship</label>
+                    </div>
+
+                    <!--option 3 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q3A3" name="groupOfDefaultRadios3">
+                        <label class="custom-control-label" for="Q3A3">205 Live Championship</label>
+                    </div>
+
+                    <div style="height: auto"></div>
+
+                </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="card border-0 shadow my-5">
+                <div class="card-body p-5">
+                    <h1> Who did Chris Jericho beat in the main event of AEW's Double or Nothing?</h1>
+                    <!-- Option 1 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q4A1" id=correct name="groupOfDefaultRadios4">
+                        <label class="custom-control-label" for="Q4A1">Kenny Omega</label>
+                    </div>
+
+                    <!-- option 2 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q4A2" name="groupOfDefaultRadios4">
+                        <label class="custom-control-label" for="Q4A2">Jon Moxley</label>
+                    </div>
+
+                    <!--option 3 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q4A3" name="groupOfDefaultRadios4">
+                        <label class="custom-control-label" for="Q4A3">The Undertaker</label>
+                    </div>
+
+                    <div style="height: auto"></div>
+
+                </div>
+            </div>
+            <!-- Question 5 -->
+            <div class="card border-0 shadow my-5">
+                <div class="card-body p-5">
+                    <h1> Which of the following is a nickname for Stone Cold Steve Austin?</h1>
+                    <!-- Option 1 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q5A1" name="groupOfDefaultRadios5">
+                        <label class="custom-control-label" for="Q5A1">The Bad Boy</label>
+                    </div>
+
+                    <!-- option 2 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q5A2" name="groupOfDefaultRadios5">
+                        <label class="custom-control-label" for="Q5A2">Angry McNastyface</label>
+                    </div>
+
+                    <!--option 3 -->
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="Q5A3" id=correct name="groupOfDefaultRadios5">
+                        <label class="custom-control-label" for="Q5A3">The Texas Rattlesnake</label>
+                    </div>
+
+                    <div style="height: auto"></div>
+
+                </div>
+            </div>
+            <div class="mx-auto" style="width: 200px;">
+            <button type="button" class="btn btn-primary btn-lg">Submit answers!</button>
+            </div>
+        </div>
 
 
     </body>
