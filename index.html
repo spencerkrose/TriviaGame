@@ -12,20 +12,27 @@
 </head>
 
 <body>
-        <script src="https://code.jquery.com/jquery.js">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
 
         function gameOver() {
             alert('Game Over!');
         }
 
+ // Here's where I got stuck. I am trying to tell the page that once the submit button is clicked, look at all radio buttons and see which ones have both the id "correct" and the tag 'checked.' The solution below was adapted from an idea I got from stackexchange because I was unfamiliar with checked tags. However, it still didn't work. From what I can see, I'm trying to store those answers in the variable "righAnswer." My console log stopped giving me errors so I got lost on where to go. I got the timer to work at least!
+
+    function userScore() {
+   
+    var rightAnswer = document.querySelectorAll(checked).length + document.$("#correct").length
+
+        alert("You got " + rightAnswer + "answers correct!");
+    }
+
         setTimeout(gameOver, 1000*60);
 
-function scoreCalculator() {
-    var correct = ["#correct"]
-    alert("You got " + correct + " answers right, brrrrrrother!")
-}
+    $("#submit").on("click"),userScore;
 
-$('.btn btn-primary btn-lg').on("click", scoreCalculator)
+
 
 
 
@@ -172,7 +179,7 @@ $('.btn btn-primary btn-lg').on("click", scoreCalculator)
             </div>
         </div>
         <div class="mx-auto" style="width: 200px;">
-            <button type="button" class="btn btn-primary btn-lg">Submit answers!</button>
+            <button type="button" id="submit" class="btn btn-primary btn-lg">Submit answers!</button>
         </div>
     </div>
 
