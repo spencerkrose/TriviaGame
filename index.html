@@ -12,37 +12,11 @@
 </head>
 
 <body>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script>
-
-        function gameOver() {
-            alert('Game Over!');
-        }
-
- // Here's where I got stuck. I am trying to tell the page that once the submit button is clicked, look at all radio buttons and see which ones have both the id "correct" and the tag 'checked.' The solution below was adapted from an idea I got from stackexchange because I was unfamiliar with checked tags. However, it still didn't work. From what I can see, I'm trying to store those answers in the variable "righAnswer." My console log stopped giving me errors so I got lost on where to go. I got the timer to work at least!
-
-    function userScore() {
-   
-    var rightAnswer = document.querySelectorAll(checked).length + document.$("#correct").length
-
-        alert("You got " + rightAnswer + "answers correct!");
-    }
-
-        setTimeout(gameOver, 1000*60);
-
-    $("#submit").on("click"),userScore;
-
-
-
-
-
-    </script>
-
     <div class="container">
 
         <div class="row" id="box-search">
             <div class="thumbnail text-center">
-                <img src="./images/WWE_Heavyweight.png" alt="The title belt" class="img-responsive">
+                <img src="./images/WWE_Heavyweight.png" alt="The title belt" class="img-responsive mx-auto">
                 <div class="caption">
                     <h1 style=color:white>Pro Wrestling Trivia!</h1>
                 </div>
@@ -60,7 +34,7 @@
 
                 <!-- option 2 -->
                 <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="Q1A2" id=correct name="groupOfDefaultRadios1">
+                    <input type="radio" class="custom-control-input" id="Q1A2" class="correct" name="groupOfDefaultRadios1">
                     <label class="custom-control-label" for="Q1A2">Kofi Kingston</label>
                 </div>
 
@@ -80,7 +54,7 @@
                 <h1> Which tag team is known as "The Good Brothers"?</h1>
                 <!-- Option 1 -->
                 <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="Q2A1" id=correct name="groupOfDefaultRadios2">
+                    <input type="radio" class="custom-control-input" id="Q2A1" class="correct" name="groupOfDefaultRadios2">
                     <label class="custom-control-label" for="Q2A1">Karl Anderson & Luke Gallows</label>
                 </div>
 
@@ -112,7 +86,7 @@
 
                 <!-- option 2 -->
                 <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="Q3A2" id=correct name="groupOfDefaultRadios3">
+                    <input type="radio" class="custom-control-input" id="Q3A2" class="correct" name="groupOfDefaultRadios3">
                     <label class="custom-control-label" for="Q3A2">IWGP Championship</label>
                 </div>
 
@@ -132,7 +106,7 @@
                 <h1> Who did Chris Jericho beat in the main event of AEW's Double or Nothing?</h1>
                 <!-- Option 1 -->
                 <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="Q4A1" id=correct name="groupOfDefaultRadios4">
+                    <input type="radio" class="custom-control-input" id="Q4A1" class="correct" name="groupOfDefaultRadios4">
                     <label class="custom-control-label" for="Q4A1">Kenny Omega</label>
                 </div>
 
@@ -170,7 +144,7 @@
 
                 <!--option 3 -->
                 <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="Q5A3" id=correct name="groupOfDefaultRadios5">
+                    <input type="radio" class="custom-control-input" id="Q5A3" class="correct" name="groupOfDefaultRadios5">
                     <label class="custom-control-label" for="Q5A3">The Texas Rattlesnake</label>
                 </div>
 
@@ -184,6 +158,43 @@
     </div>
 
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+    function gameOver() {
+        alert('Game Over!');
+    }
+
+// Here's where I got stuck. I am trying to tell the page that once the submit button is clicked, look at all radio buttons and see which ones have both the id "correct" and the tag 'checked.' The solution below was adapted from an idea I got from stackexchange because I was unfamiliar with checked tags. However, it still didn't work. From what I can see, I'm trying to store those answers in the variable "righAnswer." My console log stopped giving me errors so I got lost on where to go. I got the timer to work at least!
+
+// function userScore() {
+
+// var rightAnswer = $(document).querySelectorAll(checked).length + document.$("#correct").length
+
+//     alert("You got " + rightAnswer + "answers correct!");
+// } ---> write a function that loops over all the questions and checks to see if the answer is there.
+    // Do an if/else statement after you change iDs to classes. If checked box=correct add 1 to user score. Else +1 to incorrect. Get the button to say anything at all.
+
+    setTimeout(gameOver, 1000*60);
+
+$("#submit").on("click",userScore)
+
+function userScore() {
+    var answers = [parseInt($(".correct").length) + parseInt($("label[for='checked']").length)]
+    
+    for (let i= 0; i < answers.length; answers++) {
+
+
+        
+    }
+alert("You got " + answers + " correct")
+}
+
+
+
+
+
+</script>
 </body>
 
 </html>
